@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1 class="btn btn-primary header">Pong Pong con AI
+            <button class="btn btn-danger btn-modal" data-toggle="modal" data-target="#newModal"">Instrucciones</button>
+        </h1>
+        <br>
+        <br>
+        <button class="btn btn-success" onclick="play()">Jugar</button> <button class="btn btn-info" onclick="restart()">Reiniciar</button>
+        <h3 id="estado">Espera ... 😒</h3>
+        <div id="game"></div>
+        
+        <div id="newModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">X</button>
+                        <h3>Instrucciones</h3>
+                    </div>
+                    <div class="modal-body">
+                        <ol>
+                            <li>Primero, mantén la pantalla de tu computadora portátil recta</li>
+                            <li>Aléjate aproximadamente un metro de tu computadora</li>
+                            <li>Mueve tu muñeca derecha de forma ascendente y descendente, debería aparecer un punto rojo en tu muñeca derecha</li>
+                            <li>Ahora haz clic en el botón para jugar, y de nuevo aléjate aproximadamente un metro de tu computadora</li>
+                            <li>La paleta roja es tu paleta, se moverá según el movimiento de tu muñeca derecha</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>Creado por Jaz.R</footer>
+    </center>
+    
+
+    <script src="main.js"></script>
+</body>
+
+</html>
